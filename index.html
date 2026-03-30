@@ -3,44 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaķi</title>
+    <title>Mīļie Kaķi | Gudri un Neatkarīgi</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Ikonām (pogu izskaistināšanai) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Dark Mode Poga (novietota stūrī) -->
+    <button id="darkToggle" title="Mainīt tēmu" aria-label="Pārslēgt tumšo režīmu">
+        <i class="fas fa-moon"></i>
+    </button>
+
     <div class="container">
 
         <header>
-            <h1>Kaķi</h1>
+            <i class="fas fa-cat fa-3x" style="color: var(--primary-color); margin-bottom: 15px;"></i>
+            <h1>Kaķu Pasaule</h1>
             <p class="subtitle">Gudri, mīlīgi un neatkarīgi mājdzīvnieki</p>
         </header>
 
-        <section class="info">
-            <h2>Par kaķiem</h2>
-            <p>
-                Kaķi ir vieni no populārākajiem mājdzīvniekiem pasaulē. 
-                Tie ir zināmi ar savu rotaļīgumu, mieru un spēju pielāgoties dažādām vidēm.
-            </p>
-        </section>
+        <main>
+            <!-- Galvenā informācija -->
+            <section class="card info">
+                <h2><i class="fas fa-info-circle"></i> Par kaķiem</h2>
+                <p>
+                    Kaķi ir vieni no populārākajiem mājdzīvniekiem pasaulē. 
+                    Tie ir zināmi ar savu rotaļīgumu, mieru un spēju pielāgoties dažādām vidēm. 
+                    Šie dzīvnieki ir lieliski biedri, kas spēj samazināt stresu un ienest prieku jebkurā mājā.
+                </p>
+            </section>
 
-        <section class="facts">
-            <h2>Interesanti fakti</h2>
-            <ul>
-                <li>Kaķi var gulēt līdz pat 16 stundām dienā.</li>
-                <li>Viņiem ir ļoti laba nakts redze.</li>
-                <li>Kaķi komunicē ar cilvēkiem, murrājot un ņaudot.</li>
-            </ul>
-        </section>
+            <!-- Statiskie fakti -->
+            <section class="card facts">
+                <h2><i class="fas fa-lightbulb"></i> Interesanti fakti</h2>
+                <ul>
+                    <li>Kaķi var gulēt līdz pat 16 stundām dienā.</li>
+                    <li>Viņiem ir ļoti laba nakts redze.</li>
+                    <li>Kaķi komunicē ar cilvēkiem, murrājot un ņaudot.</li>
+                </ul>
+            </section>
 
-        <section class="gallery">
-            <h2>Kaķu galerija</h2>
-            <img src="cat1.jpg" alt="Kaķis 1">
-            <img src="cat2.jpg" alt="Kaķis 2">
-            <img src="cat3.jpg" alt="Kaķis 3">
-        </section>
+            <!-- Interaktīvā josla (Divas sekcijas blakus) -->
+            <div class="interactive-grid">
+                
+                <!-- Faktu ģenerators -->
+                <section class="card">
+                    <h2><i class="fas fa-magic"></i> Vai zināji?</h2>
+                    <p>Ģenerē jaunu faktu par kaķiem!</p>
+                    <button id="factBtn"><i class="fas fa-plus"></i> Jauns fakts</button>
+                    <p id="factBox"><em>Noklikšķini uz pogas...</em></p>
+                </section>
+
+                <!-- Random kaķis -->
+                <section class="card">
+                    <h2><i class="fas fa-image"></i> Foto mirklis</h2>
+                    <button id="catBtn"><i class="fas fa-sync-alt"></i> Cits kaķis</button>
+                    <figure class="cat-frame">
+                        <img id="randomCat" src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=500&q=80" alt="Random kaķis">
+                    </figure>
+                </section>
+
+            </div>
+
+            <!-- Galerija -->
+            <section class="card gallery-section">
+                <h2><i class="fas fa-th"></i> Kaķu galerija</h2>
+                <div class="gallery">
+                    <img src="cat1.jpg" alt="Runcis saulē" loading="lazy">
+                    <img src="cat2.jpg" alt="Kaķēns spēlējas" loading="lazy">
+                    <img src="cat3.jpg" alt="Miegains kaķis" loading="lazy">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Kaķu Entuziastu Lapa. Veidots ar mīlestību <i class="fas fa-heart" style="color: #ff6b6b;"></i></p>
+        </footer>
 
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>

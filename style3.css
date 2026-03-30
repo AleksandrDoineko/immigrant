@@ -1,0 +1,26 @@
+body {
+    font-family: Verdana, sans-serif;
+    background: #fff7e6;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #ff9900;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 40px;
+}

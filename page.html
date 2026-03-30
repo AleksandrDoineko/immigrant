@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-buttons button {
+      margin-right: 10px;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary { background: #ffd966; }
+    .btn-secondary { background: #6fa8dc; color: white; }
+
+    .boxes {
+      display: flex;
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .box {
+      flex: 1;
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .ad {
+      background: #d9ead3;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .ad button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .slider {
+      padding: 40px;
+      text-align: center;
+      background: #eee;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .grid div {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer {
+      background: #f9e2b3;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .copyright {
+      text-align: center;
+      padding: 10px;
+      background: #f6c28b;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .boxes {
+        flex-direction: column;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <div>Logo</div>
+    <nav>
+      <a href="#">SÄkums</a>
+      <a href="#">Par mums</a>
+      <a href="#">Kontakti</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Galvenais virsraksts</h1>
+      <p>Lorem ipsum dolor sit amet...</p>
+      <div class="hero-buttons">
+        <button class="btn-primary">LasÄ«t vairÄk</button>
+        <button class="btn-secondary">Pieteikties</button>
+      </div>
+    </div>
+    <div>Fona bilde</div>
+  </section>
+
+  <section class="boxes">
+    <div class="box">Zona bilde</div>
+    <div class="box">Zona bilde</div>
+    <div class="box">Zona bilde</div>
+  </section>
+
+  <section class="ad">
+    <h2>ReklÄmas virsraksts</h2>
+    <button style="background:#ffe599">Pirkt</button>
+    <button style="background:#f4cccc">IzmÄ“Ä£inÄt</button>
+  </section>
+
+  <section class="slider">
+    Bilde pa visu
+  </section>
+
+  <section class="content">
+    <h2>Heading</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+
+    <div class="grid">
+      <div>Value 1</div>
+      <div>Value 2</div>
+      <div>Value 3</div>
+      <div>Value 4</div>
+      <div>Value 5</div>
+      <div>Value 6</div>
+      <div>Value 7</div>
+      <div>Value 8</div>
+      <div>Value 9</div>
+    </div>
+  </section>
+
+  <footer>
+    <div>Logo</div>
+    <div>
+      Kontakti<br>
+      E-pasts: test@gmail.com<br>
+      Tel: +371 1234567
+    </div>
+    <div>
+      Saites<br>
+      SÄkums<br>
+      Par mums<br>
+      Kontakti
+    </div>
+  </footer>
+
+  <div class="copyright">
+    Autors: Jana Students
+  </div>
+
+</div>
+
+</body>
+</html>

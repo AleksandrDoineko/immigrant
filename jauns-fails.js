@@ -1,1 +1,0 @@
-Mans jauns kods

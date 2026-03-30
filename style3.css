@@ -1,18 +1,24 @@
 body {
-    font-family: Verdana, sans-serif;
-    background: #fff7e6;
     margin: 0;
-    padding: 0;
+    font-family: Verdana, sans-serif;
+    background: #fff3d6;
 }
 
 nav {
-    background: #ff9900;
-    padding: 15px;
+    background: #ff9800;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .logo {
+    color: white;
+    margin-right: auto;
 }
 
 nav a {
     color: white;
-    margin-right: 20px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -23,4 +29,27 @@ nav a:hover {
 
 .content {
     padding: 40px;
+}
+
+.counter-box {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+    padding: 10px 20px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e68900;
 }

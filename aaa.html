@@ -7,13 +7,27 @@
 </head>
 <body>
     <nav>
+        <h2 class="logo">MySite</h2>
         <a href="index2.html">Home</a>
         <a href="aaa.html">AAA Page</a>
     </nav>
 
     <section class="content">
         <h1>AAA Page</h1>
-        <p>This is the AAA page. You can put anything you want here.</p>
+        <p>This is the second page. Below is a simple interactive counter.</p>
+
+        <div class="counter-box">
+            <h2 id="count">0</h2>
+            <button onclick="increment()">Increase</button>
+        </div>
     </section>
+
+    <script>
+        let count = 0;
+        function increment() {
+            count++;
+            document.getElementById("count").textContent = count;
+        }
+    </script>
 </body>
 </html>
